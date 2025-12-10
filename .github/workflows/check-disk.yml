@@ -1,0 +1,13 @@
+name: Check Disk Space
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  check-disk:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check disk space
+        run: df -h
+
