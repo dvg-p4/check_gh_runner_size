@@ -14,7 +14,12 @@ jobs:
       - name: Check disk space
         run: df -h
 
-      - name: Check directory sizes
+      - name: Check subdirectory sizes
         run: |
           sudo du -hx -d1 /usr/local
+          sudo du -hx -d1 /opt/hostedtoolcache
 
+      - name: Check directory sizes
+        run: |
+          sudo du -hx -d1 /usr
+          sudo du -hx -d1 /opt
