@@ -15,5 +15,7 @@ jobs:
         run: df -h
 
       - name: Check directory sizes
-        run: sudo du -hx -d1 /
+        run: |
+          sudo du -hx -d1 /usr
+          sudo du -hx -d1 /
 
