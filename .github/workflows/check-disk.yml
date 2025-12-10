@@ -16,5 +16,5 @@ jobs:
 
       - name: Check directory sizes
         run: |
-          sudo du -hx -d1 / /usr /usr/local
+          sudo du -hx -d1 /usr/local
 
